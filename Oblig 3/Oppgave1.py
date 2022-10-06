@@ -5,6 +5,7 @@ student = {
 }
 #1. Printer ut begge dictionary keyene.
 print("1.")
+
 print(f"Fornavn: {student['first name']}")
 print(f"Etternavn: {student['last name']}\n")
 
