@@ -8,6 +8,7 @@ movies = [{"name": "Inception", "year": 2010, "rating": 8.7},
 # Lager en funksjon som legger til filmnavn, år og rating som 5.0 default.
 def addMovie(log, name, year, rating=5.0):
     log.append({"name": name, "year": year, "rating": rating})
+# Legger til 3 filmer med og en uten rating
 addMovie(movies, "The Lord of the Rings: The Return of the King", 2003, 8.9)
 addMovie(movies, "American Psycho", 2000, 7.6)
 addMovie(movies, "Spirited Away", 2001, 8.5)
@@ -15,10 +16,22 @@ addMovie(movies, "Cats", 2019)
 print(movies)
 
 print("\n5.2")
+
 def print_movie(movies):
     for log in movies:
         print(f"{log['name']} - {log['year']} has a rating of {log['rating']}")
 
 print_movie(movies)
+print()
+
+def average_rating(log):
+    print(f"Gjennomsnittsrating: Sum av alle ratings / antall filmer i listen = "
+          f"{float(sum(rating['rating'] for rating in log)) / len(log)}")
+
+average_rating(movies)
+
+
+
+
 
 print("\n5.3")
