@@ -33,8 +33,4 @@ def average_rating(log):
 average_rating(movies)
 
 
-def test(log):
-
-test(movies)
-
 print("\n5.3")
