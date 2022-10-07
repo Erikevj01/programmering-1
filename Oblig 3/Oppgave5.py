@@ -20,17 +20,27 @@ print("\n5.2")
 def print_movie(movies):
     for log in movies:
         print(f"{log['name']} - {log['year']} has a rating of {log['rating']}")
+        
 
 print_movie(movies)
 print()
 
 # Definerer en funksjon som tar summen av alle ratings på filmene i gitt liste,
 # og deler på antall distionaries i listen.
-def average_rating(log):
+def average_rating(movies):
     print(f"Gjennomsnittsrating: Sum av alle ratings / antall filmer i listen = "
-          f"{float(sum(rating['rating'] for rating in log)) / len(log)}")
+          f"{float(sum(rating['rating'] for rating in movies)) / len(movies)}")
 # Tester med filmliste tildligere brukt.
 average_rating(movies)
 
+def movies_after_year(movies, year):
+    blank_list = []
+    for log in movies:
+        if log['year'] >= year:
+            blank_list.append(log)
+            return blank_list
 
-print("\n5.3")
+print(f"\nFilmer etter 2010:")
+print_movie(movies_after_year(movies, 2010))
+
+print(movies)
