@@ -1,0 +1,6 @@
+Teorioppgave 1 - Dictionary
+En dictionary er en type liste hvor hvert element er en nøkkel med en egen verdi. 
+Det som er ulikt med en dictionary fra en vanlig liste er hvilken type parantes man bruker, og at hvert element har en egen verdi.
+ 
+Teorioppgave 2 - Funksjoner
+Funksjoner er veldig nyttige, fordi i mange scenarioer kan vi ha god bruk for kode som kan refereres til ved et navn. Dette kan benyttes når vi ønsker å kjøre samme kode flere ganger, i en annen fil eller senere i samme fil.
