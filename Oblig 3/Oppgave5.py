@@ -42,6 +42,9 @@ def moviesAfterYear(movies, year):
 # Bruker printMovie fra tidligere for å kjøre funksjonen og få ut all info om hver film
 printMovie(moviesAfterYear(movies, 2010))
 
+# Info anngående oppgave 5.3
+# I zip filen med allle programmeringsoppgavene ligger mappen "docs"
+# hvor .txt filen fra oppgave 5.3 ender opp når Oppgave.5.py kjøres
 print("\n5.3 A)")
 print("Sjekk docs/movies.txt")
 # Definerer en funksjon med movies og file som parameter
