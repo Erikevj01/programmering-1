@@ -48,7 +48,7 @@ print("Sjekk docs/movies.txt")
 # Benytter "with open" til å skrive inn dictionaries fra lista inn på .txt filen
 def addToFile(movies, file):
     file_list = []
-    with open("docs/movies.txt", 'w') as file:
+    with open(file, 'w') as file:
         for log in movies:
             file.write(f"{log['name']} - {log['year']} has a rating of {log['rating']}\n")
 
@@ -57,13 +57,13 @@ addToFile(movies, "docs/movies.txt")
 print("\n5.3 B)")
 # Definerer en funksjon med movies og file som parameter
 #
-def readFile(movies, file):
+def readFile(file):
     file_list = []
-    with open("docs/movies.txt", 'r') as file:
+    with open(file, 'r') as file:
         for log in file:
             movie = log
             file_list.append(movie)
     for info in file_list:
         print(info)
 
-readFile(movies, "docs/movies.txt")
+readFile("docs/movies.txt")
