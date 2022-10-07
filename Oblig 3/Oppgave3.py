@@ -3,7 +3,7 @@ def print_list(log):
     for value in log:
         print(value)
 
-# Definerer mine favoritt matretter
+# Lager en liste med mine favoritt matretter
 favorite_dishes = ["Pizza", "Taco", "Tapas"]
 
 # Kjører funksjonen
