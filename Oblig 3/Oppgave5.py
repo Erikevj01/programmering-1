@@ -42,13 +42,16 @@ def moviesAfterYear(movies, year):
 # Bruker printMovie fra tidligere for å kjøre funksjonen og få ut all info om hver film
 printMovie(moviesAfterYear(movies, 2010))
 
+# Info anngående oppgave 5.3
+# I zip filen med allle programmeringsoppgavene ligger mappen "docs"
+# hvor .txt filen fra oppgave 5.3 ender opp når Oppgave.5.py kjøres
 print("\n5.3 A)")
 print("Sjekk docs/movies.txt")
 # Definerer en funksjon med movies og file som parameter
 # Benytter "with open" til å skrive inn dictionaries fra lista inn på .txt filen
 def addToFile(movies, file):
     file_list = []
-    with open("docs/movies.txt", 'w') as file:
+    with open(file, 'w') as file:
         for log in movies:
             file.write(f"{log['name']} - {log['year']} has a rating of {log['rating']}\n")
 
@@ -57,13 +60,13 @@ addToFile(movies, "docs/movies.txt")
 print("\n5.3 B)")
 # Definerer en funksjon med movies og file som parameter
 #
-def readFile(movies, file):
+def readFile(file):
     file_list = []
-    with open("docs/movies.txt", 'r') as file:
+    with open(file, 'r') as file:
         for log in file:
             movie = log
             file_list.append(movie)
     for info in file_list:
         print(info)
 
-readFile(movies, "docs/movies.txt")
+readFile("docs/movies.txt")
