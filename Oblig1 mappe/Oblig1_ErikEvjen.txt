@@ -1,0 +1,14 @@
+Teorioppgave 1 - Variabel:
+Variabler er ord eller navn som brukes til å referere til verdier. En variabel må først opprettes for å kunne benyttes senere i filen. Datamaskinen leser navnet på variabelen for å finne ut verdien navnet tilsvarer. 
+
+Teorioppgave 2 - Datatyper:
+1. a) "Hamburger" er en string fordi tegnene er rammet inn med "". Alle strings er tegn som er rammet inn med enten "" eller ''. Dette blir da en sekvens av tegn.
+
+2. b) 5.52 er en float fordi det er et tall med desimaler. Floats er positive eller negative tall med desimaler, altså kommatall.
+
+
+3. c) 4195 er en int fordi tallet er et heltall. Ints er positive eller negative heltall. 
+
+
+4. d) False er en bool fordi det er en tilstand. Det er kunn to tilstander, True og False. 
+

@@ -1,0 +1,13 @@
+Oblig 2 Teori:
+
+Teorioppgave 1
+En if-test er kode om kun vil kjøre når det man definerer i if-testen blir oppfylt eller ikke oppfylt.
+If, elif og else benyttes til ulike ting i en if-test, og henger sammen på den måten at bare en av de vil kunne oppfylles. 
+If benyttes til å definere en betingelse og kjøre kode når den er oppfylt. Elif benyttes når vi ønsker å definere flere betingelser. Else benyttes til å kjøre kode når en betingelse ikke er oppfylt.
+
+Teorioppgave 2
+En liste en er variabel som kan holde på flere verdier. Verdiene har en rekkefølge og kan ha alle slags datatyper.
+Lister brukes til å holde flere verdier for å unngå å ha en variabel for hver verdi.
+
+Teorioppgave 3
+Løkker er noe vi benytter når vi ønsker å kjøre kode flere ganger. Løkker kan for eksempel benyttes til å legge inn verdier i lister, eller telle opp eller ned innenfor en range med tall.
