@@ -32,12 +32,6 @@ def check_bj(hand):
         play_again()
 
 
-def check_dealer(dealer_hand_value):
-    if dealer_hand_value < 17:
-        card = random.choice(shuffledDeck)
-        dealer_hand.append(card)
-
-
 def print_result(dealer_hand_value, player_hand_value):
     while True:
         print(f"Would you like to hit or stand?\n"
@@ -46,37 +40,22 @@ def print_result(dealer_hand_value, player_hand_value):
         player_choice = input()
 
         if player_choice == "2":
-
-            if dealer_hand_value < 17:
-                card = random.choice(shuffledDeck)
-                dealer_hand.append(card)
+            print(f"\nDealer's cards: {dealer_hand}\n"
+                  f"Dealer's hand value: {bjm.calculate_hand_value(dealer_hand)}\n"
+                  f"Player's cards: {player_hand}\n"
+                  f"Player's hand value: {bjm.calculate_hand_value(player_hand)}\n")
 
             if dealer_hand_value > 21:
-                print(f"\nDealer's cards: {dealer_hand}\n"
-                      f"Dealer's hand value: {bjm.calculate_hand_value(dealer_hand)}\n"
-                      f"Player's cards: {player_hand}\n"
-                      f"Player's hand value: {bjm.calculate_hand_value(player_hand)}\n")
                 print(f"Dealer Busted. Player won...\n")
 
             elif player_hand_value > dealer_hand_value:
-                print(f"\nDealer's cards: {dealer_hand}\n"
-                      f"Dealer's hand value: {bjm.calculate_hand_value(dealer_hand)}\n"
-                      f"Player's cards: {player_hand}\n"
-                      f"Player's hand value: {bjm.calculate_hand_value(player_hand)}\n")
                 print(f"Player has highest cards. Player won...\n")
 
             elif dealer_hand_value > player_hand_value:
-                print(f"\nDealer's cards: {dealer_hand}\n"
-                      f"Dealer's hand value: {bjm.calculate_hand_value(dealer_hand)}\n"
-                      f"Player's cards: {player_hand}\n"
-                      f"Player's hand value: {bjm.calculate_hand_value(player_hand)}\n")
                 print(f"Dealer has highest cards. Player lost...\n")
 
             elif player_hand_value == dealer_hand_value:
-                print(f"\nDealer's cards: {dealer_hand}\n"
-                      f"Dealer's hand value: {bjm.calculate_hand_value(dealer_hand)}\n"
-                      f"Player's cards: {player_hand}\n"
-                      f"Player's hand value: {bjm.calculate_hand_value(player_hand)}\n")
+
                 print(f"Tied. Player's chips are returned...\n")
             break
 
