@@ -1,0 +1,12 @@
+Teori 
+Teorioppgave 1 - Exception 
+En exception er et error vi kan opprette et eget svar på hvorfor erroret oppstår. For å gjøre dette raiser vi exceptionen under en if, elif eller else.
+Teorioppgave 2 - Klasse 
+En klasse er en definert datatype som kan bestå av mange variabler eller funksjoner. Disse blir kalt metoder i sammenheng av klasser. Siden klasser er brukerdefinerte datatyper, definer dem slik at forekomster av dem kan opprettes senere, som vil følge samme format. Vi definerer klasser for at vi skal senere skal kunne brukes til å opprette instanser etter et format. 
+Teorioppgave 3 - Objekt
+ 
+Et objekt er en instanse av en klasse. 
+Programmeringsoppgave 2 - Dokumentasjon
+Jeg begynte med forsøke meg på fremgangsmåte 1. Etterhvert ble det for utforendrene og jeg ikke over til å benytte meg av fremgangsmåte 2. Her begynte jeg først med å jobbe videre fra  “blackjack_module.py” filen som ble gitt ved. Jeg opprettet to funksjoner for å finne verdien av kort og en hånd med kort. 
+
+Videre gikk jeg mer inn på spillet og opprettet funksjoner som “hit” for å legge til kort. Jeg lagde også en funksjon for å skrive ut resultater. Neste var en funksjon for å restarte spillet og så en funksjon for å sjekke hvem som vant. Jeg kjørte alt dette i game funksjonen.
