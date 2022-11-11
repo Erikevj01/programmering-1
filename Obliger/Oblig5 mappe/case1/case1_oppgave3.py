@@ -22,11 +22,16 @@ all_wares = {
     }
 }
 
+
 def get_all_wares_in_stock(all_wares):
-    print(f"{all_wares['amd_processor']['number_in_stock']} instance(s) of "
-          f"{all_wares['amd_processor']['name']} were added to the shopping cart.\n"
-          f"{all_wares['playstation_5']['name']} is not in stock and could not be added to the shopping cart.\n"
-          f"Only {all_wares['hdmi_cable']['number_in_stock']} instance(s) "
-          f"of {all_wares['hdmi_cable']['name']} were in stock. These were added to the shopping cart.")
+    in_stock = {}
+    for ware in all_wares:
+        if all_wares[ware]['number_in_stock'] > 0:
+            in_stock[ware] = {all_wares[ware]['name']: all_wares[ware]['number_in_stock']}
+        else:
+            continue
+    print(in_stock)
+
 
 get_all_wares_in_stock(all_wares)
+print()

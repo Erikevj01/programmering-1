@@ -28,9 +28,11 @@ car_register = {
     },
 }
 
+
 def get_car_age(car):
     car_age = 2022 - car_register[car]["year"]
     print(car_age)
+
 
 get_car_age("toyotaBZ4X")
 get_car_age("pugeot408")

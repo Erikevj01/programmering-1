@@ -51,10 +51,10 @@ def calculate_total_price(car):
 
     if car_register[car]['new']:
         total_price = car_register[car]['price'] + new_car_fee
-        print(total_price)
+        print(f"The total price for this {car_register[car]['brand']} {car_register[car]['model']} is {total_price}")
     else:
         total_price = car_register[car]['price'] + used_car_fee
-        print(total_price)
+        print(f"The total price for this {car_register[car]['brand']} {car_register[car]['model']} is {total_price}")
 
 
 calculate_total_price("toyotaBZ4X")
