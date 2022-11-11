@@ -1,0 +1,59 @@
+Oblig 5 - Kodeforståelse
+
+Oppgave 1.1
+Utskriften blir:
+6
+
+Opphave 1.2
+Utskriften blir:
+[0, 1, 2, 3, 4]
+[0, 0, 0, 0, 0]
+
+Oppgave 1.3
+Utskriften blir:
+The course Programmering 1 has 215 students and 10 study points.
+
+Oppgave 1.4
+Utskriften blir:
+Honey Badger
+Giraffe
+
+Oppgave 1.5
+Utskriften blir:
+8
+
+Oppgave 1.6
+Utskriften blir:
+ape
+elephant
+
+Oppgave 1.7
+Utskriften blir:
+['Cat', 'Alligator']
+
+Oppgave 1.8
+Utskriften blir:
+{'Bread': 4, 'Milk': 3, 'Eggs': 1}
+
+Oppgave 1.9
+Utskriften blir:
+6
+10
+
+Oppgave 1.10
+Utskriften blir:
+25
+26
+27
+13
+
+Oppgave 1.11
+Utskriften blir:
+12
+The game God of War if of the genre Action and has an age rating of 18
+
+Oppgave 1.12
+Utskriften blir:
+A ValueError occurred.
+A ValueError occurred.
+The sum is: 6
